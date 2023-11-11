@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+main{
+    font: 12px "Verdana";
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+header a {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+}
+
+header a:hover {
+    background-color: yellow;
+}
+
+#lista-contatos{
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+#lista-contatos table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+#lista-contatos thead th {
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
+
+#lista-contatos td {
+    padding: 10px 15px;
+}
+
+#lista-contatos table td img {
+    width: 130px;
+    border: 1px solid #000;
+}
+
+#lista-contatos table tbody tr:hover {
+    background: yellow;
+    border: 0px solid yellow;
+    transition: 400ms ease;
+}
+
+.botao-remover-contato {
+    cursor: pointer;
+    text-align: center;
+    border: none !important;
+    width: 16px !important;
+}
+
+#formulario-cadastro-contato {
+    display: none;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+#formulario-cadastro-contato fieldset {
+    background: #ccc;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 1%;
+    margin-bottom: 10px;
+}
+
+#formulario-cadastro-contato legend {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #000;
+    background: #000;
+    font-weight: bold;
+    color: #fff;
+}
+
+#formulario-cadastro-contato ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#formulario-cadastro-contato ul li {
+    display: inline-block;
+    padding: 5px 7% 5px 7%;
+}
+
+#formulario-cadastro-contato ul img{
+    width: 130px;
+    border: 1px solid #000;
+    background: #fff;
+    cursor: pointer;
+}
+
+#formulario-cadastro-contato input {
+    display: block;
+    margin: 0px 0 5px 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+#formulario-cadastro-contato button {
+    float: right;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+    margin: 0px 5px;
+    padding: 10px;
+}

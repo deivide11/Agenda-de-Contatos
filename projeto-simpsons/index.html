@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/screens.css">
+    <script src="js/script.js" type="text/javascript"></script>
+    <title>Agenda de Contratos</title>
+</head>
+<body>
+    <main>
+        <div id="formulario-cadastro-contato">
+            <fieldset>
+                <legend>Cadastrar um Novo contato</legend>
+                <form autocomplete="nope" id="form-contato">
+                    <label>Nome: <input type="text" id="nome" name="nome" required></label>
+                    <label>E-mail: <input type="email" id="email" name="email" required></label>
+                    <label>Telefone: <input type="text" id="telefone" name="telefone" required></label>
+                    <label>Cidade: <input type="text" id="cidade" name="cidade" required></label>
+                
+                    <fieldset>
+                        <legend>Selecione um Avatar</legend>
+                        <ul>
+                            <li>
+                                <label>
+                                    <img src="img/homer.jpg" alt="">
+                                    <input type="radio" name="avatar_selecionado" value="homer.jpg">
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <img src="img/marge.png" alt="">
+                                    <input type="radio" name="avatar_selecionado" value="marge.png">
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <img src="img/bart.jpg" alt="">
+                                    <input type="radio" name="avatar_selecionado" value="bart.jpg">
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <img src="img/lisa.png" alt="">
+                                    <input type="radio" name="avatar_selecionado" value="lisa.png">
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <img src="img/flanders.jpg" alt="">
+                                    <input type="radio" name="avatar_selecionado" value="flanders.jpg">
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <img src="img/van.png" alt="">
+                                    <input type="radio" name="avatar_selecionado" value="van.png">
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    
+                    <button id="esconde-form-cadastro" type="button"> Cancelar </button>
+                    <button type="submit">Salvar</button>
+                </form>
+            </fieldset>
+        </div>
+
+        <div id="lista-contatos">
+            <h1>Contatos Inseridos</h1>
+            <table id="tbl-contatos">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Nome:</th>
+                        <th>E-mail:</th>
+                        <th>Telefone:</th>
+                        <th>Cidade:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="img/cross.png" class="botao-remover-contato"></td>
+                        <td><img src="img/homer.jpg" alt=""></td>
+                        <td>Aluno Deivide</td>
+                        <td>deivideh03.com@gmail.com</td>
+                        <td>(14) 99999-9999</td>
+                        <td>Jaú-SP</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <header>
+            <a href="" id="mostrar-form-cadastro"> Inserir novo contato </a>
+        </header>
+    </main>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@media screen and (max-width: 390px){
+    #formulario-cadastro-contato {
+        width: 90%;
+    }
+    #formulario-cadastro-contato ul img{
+        width: 100px;
+    }
+
+    #lista-contatos {
+        width: 80%;
+    }
+
+    #lista-contatos td {
+        padding: 15px;
+    }
+
+    #lista-contatos thead tr {
+        display: none;
+    }
+
+    #lista-contatos tbody tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid;
+        justify-content: center;
+    }
+}
